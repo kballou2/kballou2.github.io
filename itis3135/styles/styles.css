@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -19,8 +25,12 @@ header a {
     margin: 0 10px;
 }
 
-main {
-    padding: 20px;
+header h1 {
+    font-size: 1.8em;
+}
+
+header nav {
+    margin: 10px 0;
 }
 
 footer {
@@ -56,7 +66,7 @@ nav {
 nav a {
     text-decoration: none;
     color: #f4f4f4;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 nav a:hover {
@@ -69,4 +79,105 @@ nav a:hover {
 
 h1, h2 {
     font-family: 'Georgia', serif;
+}
+
+
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+nav a button {
+    padding: 5px 10px;
+    font-size: 1em;
+    color: #333;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+nav a button:hover {
+    background-color: blue;
+}
+
+.center {
+    text-align: center;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-element {
+    margin: 10px 0;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"],
+button[type="reset"] {
+    width: 48%;
+    padding: 10px;
+    font-size: 1em;
+    margin: 10px 1%;
+    cursor: pointer;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+    background-color: #444;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+footer nav a {
+    color: #ffcc00;
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    color: #fff;
+}
+
+footer p {
+    margin-top: 10px;
 }
