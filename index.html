@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal Home Page of [Your Name] - ITIS3135 Student">
+    <meta name="description" content="Personal Home Page of Kellen Ballou - ITIS3135 Student">
 	<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-    <title>[Your Name]'s Personal Home Page</title>
+    <title>Kellen's Personal Home Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -30,7 +30,6 @@
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px;
             position: fixed;
             bottom: 0;
             width: 100%;
@@ -45,6 +44,12 @@
         footer a:hover {
             text-decoration: underline;
         }
+
+		#validated-html, #validated-css {
+			width: 100px; 
+			height: auto; 
+			margin: 1px; 
+		}
 
         nav {
             margin: 20px 0;
@@ -79,20 +84,28 @@
 
     <main>
         <h2>Welcome to My Personal Home Page</h2>
-        <p>This is the official home page for Kellen Ballou, a student of ITIS3135 at The University of North Carolina at Charlotte. On this site, you will find links to my various profiles.</p>
-        <nav>
-            <a href="https://github.com/kballou2">GitHub</a>
-            <a href="https://kballou2.github.io">GitHub Pages</a>
-            <a href = "itis3135/">Click to go to ITIS3135 Site</a>
-        </nav>
+        <p>This is the official home page for Kellen Ballou's ITIS 3135 class. On this site, you will find links to my various profiles.</p>
     </main>
 
     <footer>
-        <p>
-            <a href="https://github.com/kballou2">GitHub</a> <span class="divider">|</span>
-            <a href="https://kballou2.github.io">GitHub Pages</a> <span class="divider">|</span>
-            <a href="itis3135/">ITIS3135</a>
-        </p>
+		<nav>
+			<a href="itis3135/index.html">Click to go to ITIS3135 Site</a>
+			-
+			<a href="https://kballou2.github.io/">GitHub Pages</a>
+			-
+			<a href="https://github.com/kballou2/kballou2.github.io">GitHub Repository</a>
+			-
+			<a href="https://www.freecodecamp.org/kellen_ballou">FreeCodeCamp</a>
+			-
+			<a href="https://www.codecademy.com/profiles/kellen_ballou">Codecademy</a>
+		</nav>
+
+		<a href="https://validator.w3.org/check?uri=referer">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!" id="validated-html">
+		</a>
+		<a href="https://jigsaw.w3.org/css-validator/check/referer">
+			<img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" id="validated-css">
+		</a>
     </footer>
 </body>
 </html>
