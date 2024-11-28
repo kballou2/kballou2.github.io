@@ -79,6 +79,7 @@ h2 {
 main {
     width: 80%;
     margin: 20px auto;
+    flex-grow: 1;
 }
 
 nav a button {
