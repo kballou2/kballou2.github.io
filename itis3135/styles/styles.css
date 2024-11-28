@@ -36,15 +36,6 @@ header nav {
     margin: 10px 0;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-}
-
 footer a {
     color: #f4f4f4;
     text-decoration: none;
@@ -166,6 +157,9 @@ footer {
     background-color: #333;
     color: #fff;
     font-size: 0.9em;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
 }
 
 footer nav a {
