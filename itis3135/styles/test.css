@@ -15,6 +15,7 @@ html {
   }
   
   main {
+    box-sizing: border-box;
     width: 80%;
     margin: 20px auto;
     flex-grow: 10;
@@ -217,8 +218,9 @@ html {
     color: #f4f4f4;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 480px) {
     main {
+      box-sizing: border-box;
       width: 95%;
       padding: 20px;
     }
@@ -245,7 +247,7 @@ html {
     }
   }
   
-  @media screen and (min-width: 601px) and (max-width: 980px) {
+  @media screen and (min-width: 481px) and (max-width: 980px) {
     main {
       width: 90%;
       max-width: 900px;
