@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Web-Based Interaction</title>
+    <title>Kind Bear Web-Based Interaction</title>
     <link rel="stylesheet" href="styles/test.css">
     <script src="scripts/defaultscripts.js" defer></script>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
@@ -14,7 +14,7 @@
     </header>
 
     <main>
-        <h2>Welcome to the Kind Bear Interaction Page</h2>
+        <h2>Welcome to the Animal Brand Interaction Page</h2>
         <h3 id="date-time"></h3>
 
         <div class="user-info">
@@ -24,21 +24,21 @@
             <label for="user-feeling">How are you feeling today?</label>
             <input type="text" id="user-feeling" placeholder="How are you feeling?">
 
-            <button onclick="greetUser()">Submit</button>
+            <button id="submit-button">Submit</button>
         </div>
 
         <label for="favorite-number">Enter your favorite number (0 to 10):</label>
         <input type="number" id="favorite-number" min="0" max="10">
-        <button onclick="showPolygon()">Submit Favorite Number</button>
+        <button id="submit-number">Submit Favorite Number</button>
 
         <h3 id="user-greeting"></h3>
 
         <h3>Animal Brand Functions:</h3>
-        <button onclick="provideInsult()">Provide an Insult</button>
-        <button onclick="calculateTax()">Calculate Tax</button>
-        <button onclick="generateRandomNumber()">Generate Random Number</button>
-        <button onclick="calculateSum()">Calculate Sum of Two Numbers</button>
-        <button onclick="showAnimalMessage()">Show Animal Message</button>
+        <button id="insult-button">Provide an Insult</button>
+        <button id="tax-button">Calculate Tax</button>
+        <button id="random-button">Generate Random Number</button>
+        <button id="sum-button">Calculate Sum of Two Numbers</button>
+        <button id="animal-message-button">Show Animal Message</button>
     </main>
 
     <footer>

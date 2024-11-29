@@ -49,4 +49,27 @@ function showAnimalMessage() {
     alert("Our animal brand is the fastest and most loyal in the jungle!");
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const submitButton = document.getElementById('submit-button');
+    submitButton.addEventListener('click', greetUser);
+
+    const submitNumberButton = document.getElementById('submit-number');
+    submitNumberButton.addEventListener('click', showPolygon);
+
+    const insultButton = document.getElementById('insult-button');
+    insultButton.addEventListener('click', provideInsult);
+
+    const taxButton = document.getElementById('tax-button');
+    taxButton.addEventListener('click', calculateTax);
+
+    const randomButton = document.getElementById('random-button');
+    randomButton.addEventListener('click', generateRandomNumber);
+
+    const sumButton = document.getElementById('sum-button');
+    sumButton.addEventListener('click', calculateSum);
+
+    const animalMessageButton = document.getElementById('animal-message-button');
+    animalMessageButton.addEventListener('click', showAnimalMessage);
+});
+
 window.onload = displayDateTime;
