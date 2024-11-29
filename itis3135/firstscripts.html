@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web-Based Interaction</title>
+    <link rel="stylesheet" href="styles/test.css">
+    <script src="scripts/defaultscripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h2>Welcome to the Animal Brand Interaction Page</h2>
+        <h3 id="date-time"></h3>
+
+        <!-- User Information Form -->
+        <div class="user-info">
+            <label for="user-name">Enter your name:</label>
+            <input type="text" id="user-name" placeholder="Your Name">
+
+            <label for="user-feeling">How are you feeling today?</label>
+            <input type="text" id="user-feeling" placeholder="How are you feeling?">
+
+            <button onclick="greetUser()">Submit</button>
+        </div>
+
+        <!-- Favorite Polygon -->
+        <label for="favorite-number">Enter your favorite number (0 to 10):</label>
+        <input type="number" id="favorite-number" min="0" max="10">
+        <button onclick="showPolygon()">Submit Favorite Number</button>
+
+        <!-- Display User Greeting -->
+        <h3 id="user-greeting"></h3>
+
+        <!-- Animal Brand Buttons -->
+        <h3>Animal Brand Functions:</h3>
+        <button onclick="provideInsult()">Provide an Insult</button>
+        <button onclick="calculateTax()">Calculate Tax</button>
+        <button onclick="generateRandomNumber()">Generate Random Number</button>
+        <button onclick="calculateSum()">Calculate Sum of Two Numbers</button>
+        <button onclick="showAnimalMessage()">Show Animal Message</button>
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLinclude.min.js"></script>
+
+    <script>
+        window.onload = function() {
+            const currentURL = window.location.href;
+            document.getElementById('validated-html').href = `https://validator.w3.org/nu/?doc=${currentURL}`;
+            document.getElementById('validated-css').href = `https://jigsaw.w3.org/css-validator/validator?uri=${currentURL}`;
+        };
+    </script>
+</body>
+</html>
