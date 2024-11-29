@@ -1,0 +1,180 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+header a {
+    color: #f4f4f4;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+h1 {
+    font-size: 1.8em;
+    text-align: center;
+    color: #333;
+    font-family: 'Georgia', serif;
+}
+
+header nav {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #f4f4f4;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #f4f4f4; 
+}
+
+#validated-html, #validated-css {
+    width: 100px; 
+    height: auto; 
+    margin: 1px; 
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f4f4f4;
+    margin-right: 10px;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+.divider {
+    margin: 0 10px;
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+}
+
+
+main {
+    width: 80%;
+    margin: 20px auto;
+    flex-grow: 10;
+}
+
+nav a button {
+    padding: 5px 10px;
+    font-size: 1em;
+    color: #333;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+nav a button:hover {
+    background-color: blue;
+}
+
+.center {
+    text-align: center;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-element {
+    margin: 10px 0;
+}
+
+input,
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"],
+button[type="reset"] {
+    box-sizing: border-box;
+    width: 48%;
+    padding: 10px;
+    font-size: 1em;
+    margin: 10px 1%;
+    cursor: pointer;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+    background-color: #444;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+}
+
+footer nav a {
+    color: #ffcc00;
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    color: #fff;
+}
+
+footer p {
+    margin-top: 10px;
+}
