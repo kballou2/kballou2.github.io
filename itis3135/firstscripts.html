@@ -6,6 +6,7 @@
     <title>Simple Web-Based Interaction</title>
     <link rel="stylesheet" href="styles/test.css">
     <script src="scripts/defaultscripts.js" defer></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -13,10 +14,9 @@
     </header>
 
     <main>
-        <h2>Welcome to the Animal Brand Interaction Page</h2>
+        <h2>Welcome to the Kind Bear Interaction Page</h2>
         <h3 id="date-time"></h3>
 
-        <!-- User Information Form -->
         <div class="user-info">
             <label for="user-name">Enter your name:</label>
             <input type="text" id="user-name" placeholder="Your Name">
@@ -27,15 +27,12 @@
             <button onclick="greetUser()">Submit</button>
         </div>
 
-        <!-- Favorite Polygon -->
         <label for="favorite-number">Enter your favorite number (0 to 10):</label>
         <input type="number" id="favorite-number" min="0" max="10">
         <button onclick="showPolygon()">Submit Favorite Number</button>
 
-        <!-- Display User Greeting -->
         <h3 id="user-greeting"></h3>
 
-        <!-- Animal Brand Buttons -->
         <h3>Animal Brand Functions:</h3>
         <button onclick="provideInsult()">Provide an Insult</button>
         <button onclick="calculateTax()">Calculate Tax</button>
