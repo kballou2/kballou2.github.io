@@ -2,9 +2,9 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -12,79 +12,62 @@ body {
     color: #333;
     display: flex;
     flex-direction: column;
-}
-
-header {
+  }
+  
+  main {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 20px auto;
+    flex-grow: 10;
+    background-color: #fff;
+    color: #333;
+    padding: 40px;
+    border-radius: 12px;
+  }
+  
+  header {
     background-color: #4CAF50;
     padding: 20px;
     color: white;
     text-align: center;
-}
-
-header a {
+  }
+  
+  header a {
     color: #f4f4f4;
     text-decoration: none;
     margin: 0 10px;
-}
-
-h1 {
+  }
+  
+  h1 {
     font-size: 1.8em;
     text-align: center;
     color: #333;
     font-family: 'Georgia', serif;
-}
-
-header nav {
+  }
+  
+  header nav {
     margin: 10px 0;
-}
+  }
 
-footer a {
-    color: #f4f4f4;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-footer a:hover {
-    text-decoration: underline;
-    color: #f4f4f4; 
-}
-
-#validated-html, #validated-css {
-    width: 100px; 
-    height: auto; 
-    margin: 1px; 
-}
-
-nav {
+  nav {
+    display: inline-block;
     margin: 20px 0;
-}
-
-nav a {
-    text-decoration: none;
+  }
+  
+  nav a {
     color: #f4f4f4;
-    margin-right: 10px;
-}
-
-nav a:hover {
+    margin: 0 12px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
     color: blue;
-}
-
-.divider {
-    margin: 0 10px;
-}
-
-h2 {
-    font-family: 'Georgia', serif;
-}
-
-
-main {
-    width: 80%;
-    margin: 20px auto;
-    flex-grow: 10;
-}
-
-nav a button {
+    text-decoration: underline;
+  }
+  
+  nav a button {
     padding: 5px 10px;
     font-size: 1em;
     color: #333;
@@ -92,51 +75,98 @@ nav a button {
     border: none;
     cursor: pointer;
     border-radius: 5px;
-}
-
-nav a button:hover {
+  }
+  
+  nav a button:hover {
     background-color: blue;
-}
+  }
+  
+  .divider {
+    margin: 0 10px;
+  }
 
-.center {
+  h2 {
+    font-family: 'Georgia', serif;
+    font-size: 1.75rem;
+    color: #34495e;
     text-align: center;
-}
+    margin-bottom: 20px;
+  }
 
-figure {
+  footer {
     text-align: center;
-}
+    padding: 15px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+  }
+  
+  footer nav a {
+    color: #ffcc00;
+    margin: 0 8px;
+    text-decoration: none;
+  }
+  
+  footer nav a:hover {
+    color: #fff;
+  }
+  
+  footer p {
+    margin-top: 10px;
+  }
 
-figure img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin: 15px 0;
-}
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+  
+  th, td {
+    border: 1px solid #bdc3c7;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #34495e;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #ecf0f1;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
 
-form {
+  form {
     max-width: 400px;
     margin: 20px auto;
     background: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.input-element {
+  }
+  
+  .input-element {
     margin: 10px 0;
-}
-
-input,
-textarea {
+  }
+  
+  input,
+  textarea {
     box-sizing: border-box;
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-button[type="submit"],
-button[type="reset"] {
+  }
+  
+  button[type="submit"],
+  button[type="reset"] {
     box-sizing: border-box;
     width: 48%;
     padding: 10px;
@@ -147,34 +177,91 @@ button[type="reset"] {
     background-color: #333;
     border: none;
     border-radius: 5px;
-}
-
-button[type="submit"]:hover,
-button[type="reset"]:hover {
+  }
+  
+  button[type="submit"]:hover,
+  button[type="reset"]:hover {
     background-color: #444;
-}
+  }
 
-footer {
+  figure {
+    margin: 20px auto;
     text-align: center;
-    padding: 15px 0;
-    background-color: #333;
-    color: #fff;
+  }
+  
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px 0;
+  }
+  
+  figcaption {
     font-size: 0.9em;
-    bottom: 0;
-    width: 100%;
-    position: relative;
-}
+    color: #777;
+  }
 
-footer nav a {
-    color: #ffcc00;
-    margin: 0 8px;
+  #validated-html, #validated-css {
+    width: 100px;
+    height: auto;
+    margin: 1px;
+  }
+
+  footer a {
+    color: #f4f4f4;
     text-decoration: none;
-}
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+    color: #f4f4f4;
+  }
 
-footer nav a:hover {
-    color: #fff;
-}
-
-footer p {
-    margin-top: 10px;
-}
+  @media screen and (max-width: 480px) {
+    main {
+      box-sizing: border-box;
+      width: 95%;
+      padding: 20px;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    header {
+      padding: 30px;
+      font-size: 1.6rem;
+    }
+  
+    footer {
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (min-width: 481px) and (max-width: 980px) {
+    main {
+      box-sizing: border-box;  
+      width: 90%;
+      max-width: 900px;
+      padding: 35px;
+    }
+  
+  
+    p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media screen and (min-width: 981px) {
+    main {
+      box-sizing: border-box;  
+      max-width: 1100px;
+      padding: 40px;
+    }
+  
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  
