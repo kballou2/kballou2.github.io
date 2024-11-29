@@ -162,6 +162,7 @@ footer {
     font-size: 0.9em;
     bottom: 0;
     width: 100%;
+    position: fixed;
 }
 
 footer nav a {
