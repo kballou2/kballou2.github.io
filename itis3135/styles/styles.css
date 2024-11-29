@@ -81,7 +81,7 @@ h2 {
 main {
     width: 80%;
     margin: 20px auto;
-    flex-grow: 1;
+    flex-grow: 10;
 }
 
 nav a button {
