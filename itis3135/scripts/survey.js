@@ -1,20 +1,3 @@
-function validateForm(event) {
-    const form = document.getElementById('intro-form');
-    const name = form.name.value;
-    const mascot = form.mascot.value;
-    const image = form.image.files.length;
-    const caption = form['image-caption'].value;
-
-    if (!name || !mascot || !image || !caption) {
-        alert("Please fill in all required fields.");
-        event.preventDefault();
-        return false;
-    }
-
-    event.preventDefault(); 
-    submitFormData();
-}
-
 function addCourseField(event) {
     event.preventDefault();
 
@@ -50,7 +33,7 @@ function submitFormData() {
     document.getElementById('result-platform').innerText = form.platform.value;
 
     const courses = form.querySelectorAll('[name="course[]"]');
-    const coursesText = Array.from(courses).map(course => course.value).join(', ');
+    const coursesText = Array.from(courses).map((course) => course.value).join(', ');
     document.getElementById('result-courses').innerText = coursesText;
 
     document.getElementById('result-funny-thing').innerText = form['funny-thing'].value;
@@ -58,6 +41,23 @@ function submitFormData() {
 
     form.style.display = 'none';
     document.getElementById('result').style.display = 'block';
+}
+
+function validateForm(event) {
+    const form = document.getElementById('intro-form');
+    const name = form.name.value;
+    const mascot = form.mascot.value;
+    const image = form.image.files.length;
+    const caption = form['image-caption'].value;
+
+    if (!name || !mascot || !image || !caption) {
+        alert("Please fill in all required fields.");
+        event.preventDefault();
+        return false;
+    }
+
+    event.preventDefault(); 
+    submitFormData();
 }
 
 function resetForm() {
