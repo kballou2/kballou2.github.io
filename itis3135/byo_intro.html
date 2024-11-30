@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYO Intro</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts/survey.js" defer></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h2>Time to create your own Intro page! Please fill out the form below to create your own page.</h2>
+
+        <form id="introForm" onsubmit="return validateForm(event)">
+            <h3>Fill out the information below:</h3>
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" value="Your Name" required><br>
+
+            <label for="mascot">Mascot:</label>
+            <input type="text" id="mascot" name="mascot" value="Your Mascot" required><br>
+
+            <label for="image">Upload Image (PNG/JPG):</label>
+            <input type="file" id="image" name="image" accept="image/png, image/jpg, image/jpeg" required><br>
+
+            <label for="imageCaption">Image Caption:</label>
+            <input type="text" id="imageCaption" name="imageCaption" value="Your Caption" required><br>
+
+            <label for="personalBackground">Personal Background:</label>
+            <textarea id="personalBackground" name="personalBackground" required>Your personal background</textarea><br>
+
+            <label for="professionalBackground">Professional Background:</label>
+            <textarea id="professionalBackground" name="professionalBackground" required>Your professional background</textarea><br>
+
+            <label for="academicBackground">Academic Background:</label>
+            <textarea id="academicBackground" name="academicBackground" required>Your academic background</textarea><br>
+
+            <label for="webDevelopment">Background in Web Development:</label>
+            <textarea id="webDevelopment" name="webDevelopment" required>Your web development background</textarea><br>
+
+            <label for="platform">Primary Computer Platform:</label>
+            <input type="text" id="platform" name="platform" value="Your Platform" required><br>
+
+            <label for="courses">Courses Currently Taking:</label>
+            <div id="coursesContainer">
+                <input type="text" name="course[]" id="course1" placeholder="Course name" required>
+                <button type="button" onclick="addCourseField()">Add Another Course</button>
+            </div><br>
+
+            <label for="funnyThing">Funny thing:</label>
+            <input type="text" id="funnyThing" name="funnyThing"><br>
+
+            <label for="otherInfo">Anything else:</label>
+            <textarea id="otherInfo" name="otherInfo"></textarea><br>
+
+            <label>
+                <input type="checkbox" id="agree" name="agree" required>
+                I understand that what is on this page is not password protected and I will not put anything here that I don't want publicly available.
+            </label><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+
+        <div id="result" style="display:none;">
+            <h3>Your Introduction Page</h3>
+            <p><strong>Name:</strong> <span id="resultName"></span></p>
+            <p><strong>Mascot:</strong> <span id="resultMascot"></span></p>
+            <p><strong>Image:</strong> <img id="resultImage" alt="Uploaded Image" style="width:200px;"></p>
+            <p><strong>Image Caption:</strong> <span id="resultImageCaption"></span></p>
+            <p><strong>Personal Background:</strong> <span id="resultPersonalBackground"></span></p>
+            <p><strong>Professional Background:</strong> <span id="resultProfessionalBackground"></span></p>
+            <p><strong>Academic Background:</strong> <span id="resultAcademicBackground"></span></p>
+            <p><strong>Background in Web Development:</strong> <span id="resultWebDevelopment"></span></p>
+            <p><strong>Primary Computer Platform:</strong> <span id="resultPlatform"></span></p>
+            <p><strong>Courses Currently Taking:</strong> <span id="resultCourses"></span></p>
+            <p><strong>Funny Thing:</strong> <span id="resultFunnyThing"></span></p>
+            <p><strong>Anything Else:</strong> <span id="resultOtherInfo"></span></p>
+            <button onclick="resetForm()">Reset</button>
+        </div>
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLinclude.min.js"></script>
+</body>
+</html>
