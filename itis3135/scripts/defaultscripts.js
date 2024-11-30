@@ -20,7 +20,7 @@ function showPolygon() {
     ];
     const polygonName = polygons[favoriteNumber] || `A polygon with ${favoriteNumber} sides`;
     const polygonText = `A polygon with ${favoriteNumber} sides is called: ${polygonName}`;
-    document.getElementById('favorite-number').innerText = polygonText;
+    document.getElementById('polygon-output').innerText = polygonText;
 }
 
 function provideInsult() {
@@ -36,7 +36,7 @@ function provideInsult() {
         "You're like a phone with no signal — I can’t connect with you.",
         "If ignorance is bliss, you must be the happiest person alive."
       ];
-    document.getElementById('insult-button').textContent = insults[Math.floor(Math.random() * insults.length)];
+    document.getElementById('function-output').textContent = insults[Math.floor(Math.random() * insults.length)];
 }
 
 function calculateTax() {
@@ -44,13 +44,13 @@ function calculateTax() {
     const taxRate = 0.1;
     const tax = (parseFloat(amount) * taxRate).toFixed(2);
     const taxText = `The tax on $${amount} is $${tax}`;
-    document.getElementById('tax-button').textContent = taxText;
+    document.getElementById('function-output').textContent = taxText;
 }
 
 function generateRandomNumber() {
     const randomNumber = Math.floor(Math.random() * 100) + 1;
     const randomNumberText = `Your random number is: ${randomNumber}`;
-    document.getElementById('random-button').textContent = randomNumberText;
+    document.getElementById('function-output').textContent = randomNumberText;
 }
 
 function calculateSum() {
@@ -58,12 +58,12 @@ function calculateSum() {
     const num2 = parseFloat(prompt("Enter the second number:"));
     const sum = num1 + num2;
     const sumText = `The sum of ${num1} and ${num2} is: ${sum}`;
-    document.getElementById('sum-button').textContent = sumText;
+    document.getElementById('function-output').textContent = sumText;
 }
 
 function showAnimalMessage() {
     const messageText = "Our animal brandThe kind bear is a gentle giant of the forest, whose warm heart and calm presence bring comfort to all who encounter it, proving that strength can coexist with compassion. is the fastest and most loyal in the jungle!";
-    document.getElementById('animal-message-button').textContent = messageText;
+    document.getElementById('function-output').textContent = messageText;
 }
 
 document.addEventListener('DOMContentLoaded', function() {
