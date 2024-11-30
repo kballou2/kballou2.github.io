@@ -14,9 +14,9 @@
     </header>
 
     <main>
-        <h2>Time to create your own Intro page! Please fill out the form below to create your own page.</h2>
+        <h2>Time to create your Intro page! Please fill out the form below to create your own page.</h2>
 
-        <form id="introForm" onsubmit="return validateForm(event)">
+        <form id="intro-form">
             <h3>Fill out the information below:</h3>
 
             <label for="name">Your Name:</label>
@@ -28,35 +28,35 @@
             <label for="image">Upload Image (PNG/JPG):</label>
             <input type="file" id="image" name="image" accept="image/png, image/jpg, image/jpeg" required><br>
 
-            <label for="imageCaption">Image Caption:</label>
-            <input type="text" id="imageCaption" name="imageCaption" value="Your Caption" required><br>
+            <label for="image-caption">Image Caption:</label>
+            <input type="text" id="image-caption" name="image-caption" value="Your Caption" required><br>
 
-            <label for="personalBackground">Personal Background:</label>
-            <textarea id="personalBackground" name="personalBackground" required>Your personal background</textarea><br>
+            <label for="personal-background">Personal Background:</label>
+            <textarea id="personal-background" name="personal-background" required>Your personal background</textarea><br>
 
-            <label for="professionalBackground">Professional Background:</label>
-            <textarea id="professionalBackground" name="professionalBackground" required>Your professional background</textarea><br>
+            <label for="professional-background">Professional Background:</label>
+            <textarea id="professional-background" name="professional-background" required>Your professional background</textarea><br>
 
-            <label for="academicBackground">Academic Background:</label>
-            <textarea id="academicBackground" name="academicBackground" required>Your academic background</textarea><br>
+            <label for="academic-background">Academic Background:</label>
+            <textarea id="academic-background" name="academic-background" required>Your academic background</textarea><br>
 
-            <label for="webDevelopment">Background in Web Development:</label>
-            <textarea id="webDevelopment" name="webDevelopment" required>Your web development background</textarea><br>
+            <label for="web-development">Background in Web Development:</label>
+            <textarea id="web-development" name="web-development" required>Your web development background</textarea><br>
 
             <label for="platform">Primary Computer Platform:</label>
             <input type="text" id="platform" name="platform" value="Your Platform" required><br>
 
             <label for="courses">Courses Currently Taking:</label>
-            <div id="coursesContainer">
+            <div id="courses-container">
                 <input type="text" name="course[]" id="course1" placeholder="Course name" required>
-                <button type="button" onclick="addCourseField()">Add Another Course</button>
+                <button type="button" id="add-course-button">Add Another Course</button>
             </div><br>
 
-            <label for="funnyThing">Funny thing:</label>
-            <input type="text" id="funnyThing" name="funnyThing"><br>
+            <label for="funny-thing">Funny thing:</label>
+            <input type="text" id="funny-thing" name="funny-thing"><br>
 
-            <label for="otherInfo">Anything else:</label>
-            <textarea id="otherInfo" name="otherInfo"></textarea><br>
+            <label for="other-info">Anything else:</label>
+            <textarea id="other-info" name="other-info"></textarea><br>
 
             <label>
                 <input type="checkbox" id="agree" name="agree" required>
@@ -67,21 +67,21 @@
             <input type="reset" value="Reset">
         </form>
 
-        <div id="result" style="display:none;">
+        <div id="result" class="hidden">
             <h3>Your Introduction Page</h3>
-            <p><strong>Name:</strong> <span id="resultName"></span></p>
-            <p><strong>Mascot:</strong> <span id="resultMascot"></span></p>
-            <p><strong>Image:</strong> <img id="resultImage" alt="Uploaded Image" style="width:200px;"></p>
-            <p><strong>Image Caption:</strong> <span id="resultImageCaption"></span></p>
-            <p><strong>Personal Background:</strong> <span id="resultPersonalBackground"></span></p>
-            <p><strong>Professional Background:</strong> <span id="resultProfessionalBackground"></span></p>
-            <p><strong>Academic Background:</strong> <span id="resultAcademicBackground"></span></p>
-            <p><strong>Background in Web Development:</strong> <span id="resultWebDevelopment"></span></p>
-            <p><strong>Primary Computer Platform:</strong> <span id="resultPlatform"></span></p>
-            <p><strong>Courses Currently Taking:</strong> <span id="resultCourses"></span></p>
-            <p><strong>Funny Thing:</strong> <span id="resultFunnyThing"></span></p>
-            <p><strong>Anything Else:</strong> <span id="resultOtherInfo"></span></p>
-            <button onclick="resetForm()">Reset</button>
+            <p><strong>Name:</strong> <span id="result-name"></span></p>
+            <p><strong>Mascot:</strong> <span id="result-mascot"></span></p>
+            <p><strong>Image:</strong> <img id="result-image" alt="Uploaded Image"></p>
+            <p><strong>Image Caption:</strong> <span id="result-image-caption"></span></p>
+            <p><strong>Personal Background:</strong> <span id="result-personal-background"></span></p>
+            <p><strong>Professional Background:</strong> <span id="result-professional-background"></span></p>
+            <p><strong>Academic Background:</strong> <span id="result-academic-background"></span></p>
+            <p><strong>Background in Web Development:</strong> <span id="result-web-development"></span></p>
+            <p><strong>Primary Computer Platform:</strong> <span id="result-platform"></span></p>
+            <p><strong>Courses Currently Taking:</strong> <span id="result-courses"></span></p>
+            <p><strong>Funny Thing:</strong> <span id="result-funny-thing"></span></p>
+            <p><strong>Anything Else:</strong> <span id="result-other-info"></span></p>
+            <button id="reset-button">Reset</button>
         </div>
     </main>
 
