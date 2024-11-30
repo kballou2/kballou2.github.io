@@ -1,11 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("intro-form").addEventListener("submit", validateForm);
-
-    document.getElementById("add-course-button").addEventListener("click", addCourseField);
-
-    document.getElementById("reset-button").addEventListener("click", resetForm);
-});
-
 function validateForm(event) {
     const form = document.getElementById('intro-form');
     const name = form.name.value;
@@ -73,3 +65,11 @@ function resetForm() {
     document.getElementById('result').style.display = 'none';
     document.getElementById('intro-form').style.display = 'block';
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("intro-form").addEventListener("submit", validateForm);
+
+    document.getElementById("add-course-button").addEventListener("click", addCourseField);
+
+    document.getElementById("reset-button").addEventListener("click", resetForm);
+});
