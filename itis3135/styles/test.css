@@ -306,6 +306,16 @@ div ul li {
   margin: 0 10px;
 }
 
+.nav-link {
+  text-decoration: none;  
+  color: #000;  
+  font-size: 16px;  
+}
+
+.nav-link:hover {
+  color: #007bff;  
+}
+
 @media screen and (max-width: 480px) {
   main {
     box-sizing: border-box;
