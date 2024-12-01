@@ -3,30 +3,31 @@ $(document).ready(function() {
     var totalSlides = $(".slide").length;
 
     function showSlide(slideIndex) {
-        $(".slide").hide();  
-        $("#slide-" + slideIndex).show();  
-        currentSlide = slideIndex;  
+        $(".slide").hide(); 
+        $("#slide-" + slideIndex).show(); 
+        currentSlide = slideIndex;
     }
 
     function moveSlide(direction) {
-        currentSlide += direction;  
-        if (currentSlide > totalSlides) currentSlide = 1;  
-        if (currentSlide < 1) currentSlide = totalSlides;  
-        showSlide(currentSlide);  
+        currentSlide += direction;
+        if (currentSlide > totalSlides) currentSlide = 1;
+        if (currentSlide < 1) currentSlide = totalSlides;
+        showSlide(currentSlide);
     }
 
     showSlide(currentSlide);
 
     $(".prev").click(function() {
-        moveSlide(-1);  
+        moveSlide(-1); 
     });
 
     $(".next").click(function() {
-        moveSlide(1);  
+        moveSlide(1); 
     });
 
-    $(".nav-link").click(function() {
-        var slideIndex = $(this).data("slide");  
-        showSlide(slideIndex);  
+    $(".nav-link").click(function(event) {
+        event.preventDefault(); 
+        var slideIndex = $(this).data("slide"); 
+        showSlide(slideIndex); 
     });
 });
