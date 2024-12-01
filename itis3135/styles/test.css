@@ -260,13 +260,13 @@ footer a:hover {
   color: #f4f4f4;
 }
 
-nav ul {
+div ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav ul li {
-  display: inline;
+div ul li {
+  display: grid;
   margin: 0 10px;
 }
 
