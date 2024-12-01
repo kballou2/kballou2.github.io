@@ -11,7 +11,6 @@ $(document).ready(function() {
         $('#caption').text(captionText);
     }
 
-    // Initialize the first slide
     showSlide(currentSlide);
 
     $('#next').click(function() {
