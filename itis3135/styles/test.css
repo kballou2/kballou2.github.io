@@ -302,7 +302,7 @@ div ul li {
 }
 
 .image-list ul li {
-  display: inline;
+  display: grid;
   margin: 0 10px;
 }
 
