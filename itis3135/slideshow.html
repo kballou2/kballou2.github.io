@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webpages Kellen Ballou - ITIS3135 Student">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <title>Slideshow Gallery - Kellen Ballou</title>
+    <link rel="stylesheet" href="styles/test.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h2>My Slideshow Gallery</h2>
+        <div class="slideshow-container">
+            <div class="slideshow-images">
+                <img src="images/koala.jpg" alt="Koala" class="slide" id="slide-1">
+                <img src="images/egg.jpg" alt="Egg" class="slide" id="slide-2">
+                <img src="images/lemur.jpg" alt="Lemur" class="slide" id="slide-3">
+                <img src="images/lamp.jpg" alt="Lamp" class="slide" id="slide-4">
+                <img src="images/energy.jpg" alt="Energy" class="slide" id="slide-5">
+                <img src="images/nutella.jpg" alt="Nutella" class="slide" id="slide-6">
+                <img src="images/bear.jpg" alt="Bear" class="slide" id="slide-7">
+                <img src="images/apple.jpg" alt="Apple" class="slide" id="slide-8">
+                <img src="images/lion.jpg" alt="Lion" class="slide" id="slide-9">
+                <img src="images/lemon.jpg" alt="Lemon" class="slide" id="slide-10">
+                <img src="images/ox.jpg" alt="Ox" class="slide" id="slide-11">
+                <img src="images/umbrella.jpg" alt="Umbrella" class="slide" id="slide-12">
+            </div>
+            <div class="captions">
+                <p id="caption"></p>
+            </div>
+        </div>
+
+        <div class="image-list">
+            <h3>Tool used <a href="https://deepai.org/machine-learning-model/text2img">DeepAI</a></h3>
+            <ul>
+                <li><a href="#" data-slide="1">K - Koala</a></li>
+                <li><a href="#" data-slide="2">E - Egg</a></li>
+                <li><a href="#" data-slide="3">L - Lemur</a></li>
+                <li><a href="#" data-slide="4">L - Lamp</a></li>
+                <li><a href="#" data-slide="5">E - Energy</a></li>
+                <li><a href="#" data-slide="6">N - Nutella</a></li>
+                <li><a href="#" data-slide="7">B - Bear</a></li>
+                <li><a href="#" data-slide="8">A - Apple</a></li>
+                <li><a href="#" data-slide="9">L - Lion</a></li>
+                <li><a href="#" data-slide="10">L - Lemon</a></li>
+                <li><a href="#" data-slide="11">O - Ox</a></li>
+                <li><a href="#" data-slide="12">U - Umbrella</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLinclude.min.js"></script>
+    <script src="scripts/slideshow.js"></script>
+</body>
+
+</html>
