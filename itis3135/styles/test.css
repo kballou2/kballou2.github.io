@@ -252,6 +252,52 @@ footer a:hover {
   color: #f4f4f4;
 }
 
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slideshow-images {
+  display: none;
+}
+
+.slideshow-images img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.captions {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.image-list {
+  margin-top: 20px;
+}
+
+.image-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.image-list ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
 @media screen and (max-width: 480px) {
   main {
     box-sizing: border-box;
