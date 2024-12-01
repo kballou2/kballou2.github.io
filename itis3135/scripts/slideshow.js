@@ -20,7 +20,7 @@ $(document).ready(function() {
     // 1000 ms = 1 s
     setInterval(function() {
         moveSlide(1);  
-    }, 3000); 
+    }, 8000); 
 
     $(".prev").click(function() {
         moveSlide(-1); 
