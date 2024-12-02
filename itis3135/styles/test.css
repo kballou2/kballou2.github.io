@@ -81,6 +81,16 @@ nav a button:hover {
   background-color: blue;
 }
 
+a {
+  color: black; 
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffcc00; 
+  text-decoration: underline;
+}
+
 .divider {
   margin: 0 10px;
 }
