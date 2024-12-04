@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" version="25.0.1">
+  <diagram name="Page-1" id="2cc2dc42-3aac-f2a9-1cec-7a8b7cbee084">
+    <mxGraphModel dx="1429" dy="842" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7026571954dc6520-1" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.browserWindow;rSize=0;strokeColor=#666666;mainText=,;recursiveResize=0;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
+          <mxGeometry x="50" y="60" width="1050" height="590" as="geometry" />
+        </mxCell>
+        <mxCell id="7026571954dc6520-2" value="Page 1" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;fontSize=17;fontColor=#666666;align=left;" parent="7026571954dc6520-1" vertex="1">
+          <mxGeometry x="60" y="12" width="110" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="7026571954dc6520-3" value="https://www.default.com" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;rSize=0;fontSize=17;fontColor=#666666;align=left;" parent="7026571954dc6520-1" vertex="1">
+          <mxGeometry x="130" y="60" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="7026571954dc6520-4" value="Dobi Daze" style="text;html=1;points=[];align=left;verticalAlign=top;spacingTop=-4;fontSize=30;fontFamily=Verdana" parent="7026571954dc6520-1" vertex="1">
+          <mxGeometry x="30" y="140" width="340" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7026571954dc6520-15" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.markup.line;strokeColor=#999999;rounded=0;labelBackgroundColor=none;fillColor=#ffffff;fontFamily=Verdana;fontSize=12;fontColor=#000000;" parent="7026571954dc6520-1" vertex="1">
+          <mxGeometry y="310" width="1050" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7026571954dc6520-21" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.markup.line;strokeColor=#999999;rounded=0;labelBackgroundColor=none;fillColor=#ffffff;fontFamily=Verdana;fontSize=12;fontColor=#000000;" parent="7026571954dc6520-1" vertex="1">
+          <mxGeometry y="580" width="1050" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj716LCAZ4XoNTrfhbCZ-1" value="Home Page" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="7026571954dc6520-1">
+          <mxGeometry x="460" y="150" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj716LCAZ4XoNTrfhbCZ-2" value="Endorsed Products" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="7026571954dc6520-1">
+          <mxGeometry x="110" y="390" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj716LCAZ4XoNTrfhbCZ-3" value="Gallery" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="7026571954dc6520-1">
+          <mxGeometry x="325" y="390" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj716LCAZ4XoNTrfhbCZ-4" value="Contact US" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="7026571954dc6520-1">
+          <mxGeometry x="590" y="390" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj716LCAZ4XoNTrfhbCZ-5" value="Relaxing Dog Videos" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="7026571954dc6520-1">
+          <mxGeometry x="820" y="390" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj716LCAZ4XoNTrfhbCZ-8" value="This website will serve as a central hub for Brenda (Dobi Daze &lt;br/&gt;Instagram) to bring her Instagram followers to a single location where &lt;br/&gt;they can see photos from various social media platforms, learn about &lt;br/&gt;products she endorses, and view memories related to her dogs." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="7026571954dc6520-1">
+          <mxGeometry x="30" y="190" width="360" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -265,6 +265,11 @@ img {
   margin-right: auto;
 }
 
+section img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 figcaption {
   font-size: 0.9em;
   color: #777;
