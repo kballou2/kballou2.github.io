@@ -248,9 +248,16 @@ figure img {
   margin: 15px 0;
 }
 
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 figcaption {
   font-size: 0.9em;
   color: #777;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #validated-html, #validated-css {
