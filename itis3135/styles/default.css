@@ -82,12 +82,12 @@ nav a button:hover {
 }
 
 a {
-  color: black; 
+  color: black;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ffcc00; 
+  color: #ffcc00;
   text-decoration: underline;
 }
 
@@ -142,7 +142,8 @@ table {
   margin-bottom: 30px;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #bdc3c7;
   padding: 10px;
   text-align: left;
@@ -260,7 +261,8 @@ figcaption {
   margin-right: auto;
 }
 
-#validated-html, #validated-css {
+#validated-html,
+#validated-css {
   width: 100px;
   height: auto;
   margin: 1px;
@@ -324,13 +326,13 @@ div ul li {
 }
 
 .nav-link {
-  text-decoration: none;  
-  color: #000;  
-  font-size: 16px;  
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
 }
 
 .nav-link:hover {
-  color: #007bff;  
+  color: #007bff;
 }
 
 @media screen and (max-width: 480px) {
@@ -352,11 +354,56 @@ div ul li {
   footer {
     font-size: 1rem;
   }
+
+  #colorbox {
+    background-color: yellow;
+  }
 }
+
+
+section.highlighting * {
+  background-color: red;
+}
+
+section.centeredc * {
+  background-color: yellow;
+  text-align: center;
+}
+
+section.centerede * {
+  background-color: green;
+  color: #fff;
+  margin: auto;
+  max-width: 500px;
+  width: 95%;
+}
+
+#colorbox {
+  height: 200px;
+  width: 200px;
+  background: blue;
+  margin: 50px auto;
+}
+
+/* MOBILE RULES */
+/* Remove Initial */
+html,
+body {
+  all: initial;
+}
+
+/* Foundational Three */
+main,
+.maincontainer {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 
 @media screen and (min-width: 481px) and (max-width: 980px) {
   main {
-    box-sizing: border-box;  
+    box-sizing: border-box;
     width: 90%;
     max-width: 900px;
     padding: 35px;
@@ -365,16 +412,24 @@ div ul li {
   p {
     font-size: 1.1rem;
   }
+
+  #colorbox {
+    background-color: red;
+  }
 }
 
 @media screen and (min-width: 981px) {
   main {
-    box-sizing: border-box;  
+    box-sizing: border-box;
     max-width: 1100px;
     padding: 40px;
   }
 
   p {
     font-size: 1.2rem;
+  }
+
+  #colorbox {
+    background-color: orange;
   }
 }
