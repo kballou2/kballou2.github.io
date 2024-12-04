@@ -1,0 +1,9 @@
+{
+    "navLinks": [
+        {"name": "ITIS3135 Site", "url": "index.html"},
+        {"name": "GitHub Pages", "url": "https://kballou2.github.io/"},
+        {"name": "GitHub Repository", "url": "https://github.com/kballou2/kballou2.github.io"},
+        {"name": "FreeCodeCamp", "url": "https://www.freecodecamp.org/kellen_ballou"},
+        {"name": "Codecademy", "url": "https://www.codecademy.com/profiles/kellen_ballou"}
+    ]
+}
