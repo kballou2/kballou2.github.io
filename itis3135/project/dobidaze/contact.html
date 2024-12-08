@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Us - Dobi Daze">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <title>Contact Us - Dobi Daze</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/script.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <h1>Dobi Daze</h1>
+        <nav class="nav-bar">
+            <a href="../index.html">Home</a> ||
+            <a href="endorsed-products.html">Endorsed Products</a> ||
+            <a href="gallery.html">Gallery</a> ||
+            <a href="contact.html">Contact Us</a> ||
+            <a href="dog-videos.html">Dog Videos</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, please feel free to reach out to us using the form below!</p>
+
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+    <footer id="footer">
+        <p>© 2024 Dobi Daze | All Rights Reserved</p>
+        <nav>
+            <a href="https://www.instagram.com/dobidaze/">Instagram</a> |
+        </nav>
+    </footer>
+</body>
+
+</html>
