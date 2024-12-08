@@ -149,6 +149,7 @@ label {
 }
 
 input, textarea {
+    box-sizing: border-box;
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
